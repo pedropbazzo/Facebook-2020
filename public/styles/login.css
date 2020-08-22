@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: #edf0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 90%;
+}
+
+.div-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-auto img {
+    width: 100%;
+    max-width: 16rem;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.div-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.div-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-form form input {
+    height: 3rem;
+    width: 100%;
+    max-width: 18rem;
+    border: solid 1px rgb(230, 230, 230);
+    border-radius: 0.3rem;
+    margin: 0 auto;
+}
+
+.div-form form input+input {
+    margin-top: 0.8rem;
+}
+
+input {
+    text-indent: 0.7rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+    transition: 0.3s;
+    color: rgb(196, 196, 196);
+}
+
+.div-form .log {
+    height: 3rem;
+    width: 100%;
+    max-width: 18rem;
+    margin: 0.8rem auto 0;
+    border: none;
+    border-radius: 0.3rem;
+    background: #1877f2;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.div-form .log:hover {
+    background: #1770e4;
+}
+
+.div-form a {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    margin: 1.8rem auto 0;
+    color: #1877f2;
+}
+
+.div-form a:hover {
+    text-decoration: underline;
+}
+
+.div-form hr {
+    border: solid 1px rgb(230, 230, 230);
+    width: 100%;
+    max-width: 18rem;
+    margin-top: 1.8rem;
+}
+
+.new {
+    height: 3rem;
+    width: 100%;
+    max-width: 10rem;
+    margin: 1.8rem auto 0;
+    border: none;
+    border-radius: 0.3rem;
+    background: #42b72a;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.new:hover {
+    background: #3ca327;
+}
+
+.div-form p {
+    margin-top: 2rem;    
+}
+
+.div-form p strong {
+    color: black;
+}
+
+@media (min-width: 1000px) {
+    .main {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .div-auto {
+        align-items: flex-start;
+        position: relative;
+        width: 30rem;
+        margin-right: 5rem;
+    }
+
+    .div-auto p{
+        text-align: left;
+        font-size: 1.69rem;
+        margin-bottom: 3rem;
+    }
+
+    .div-form {
+        margin: 0;
+    }
+
+    .div-form form input {
+        max-width: 21rem;        
+        border-radius: 0.4rem;
+    }
+
+    .div-form .log {
+        max-width: 21rem; 
+        border-radius: 0.4rem;
+    }
+
+    .new {
+        border-radius: 0.4rem;
+    }
+
+    .div-form form {
+        width: 23rem;
+        height: 21rem;
+        background: white;
+        border-radius: 0.4rem;
+        box-shadow: 0 0 10px rgb(214, 214, 214);
+    }
+
+    .div-form hr {
+        max-width: 20rem;
+        margin-top: 1rem;
+    }
+
+    .div-form a {
+        margin-top: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+}
